@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 
 const HOMEPAGE_URL = 'https://www.malas.co.za/';
 
-test.describe('Malas Homepage', () => {
+test.describe('sTAGING Malas Homepage', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(HOMEPAGE_URL);
   });
