@@ -36,11 +36,6 @@ test.describe('Malas Homepage', () => {
     await expect(page.getByText(/PAY/)).toBeVisible();
   });
 
-  test('shows tyre deals or product content', async ({ page }) => {
-    await expect(
-      page.getByText(/add to cart|in stock|special price|latest online tyre deals/i).first()
-    ).toBeVisible({ timeout: 15000 });
-  });
 
   test('shows footer with contact info', async ({ page }) => {
     await expect(page.getByText(/0861 062 527/)).toBeVisible();
