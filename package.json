@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "perf": "npx playwright test tests/Performance/PerformanceSmoke.spec.js --project=chromium",
+    "perf:analyze": "node utils/analyzePerf.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
